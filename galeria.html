@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería - Luis Mario</title>
+  <link rel="icon" href="icons/icon_luismario.jpg">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding-bottom: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .icono {
+      width: 40px;
+      height: 40px;
+    }
+
+    .titulo {
+      font-size: 1.8em;
+    }
+
+    .redes {
+      display: flex;
+      gap: 10px;
+    }
+
+    .red-icon {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.2s;
+    }
+
+    .red-icon:hover {
+      transform: scale(1.1);
+    }
+
+    .menu-horizontal {
+      overflow-x: auto;
+      background-color: #2e2e40;
+    }
+
+    .menu-horizontal ul {
+      display: flex;
+      list-style: none;
+      padding: 10px 20px;
+      gap: 20px;
+    }
+
+    .menu-horizontal li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+      white-space: nowrap;
+    }
+
+    .menu-horizontal li a:hover {
+      background-color: #444465;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 600px) {
+      .header-top {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .titulo {
+        font-size: 1.4em;
+      }
+
+      .menu-horizontal ul {
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .menu-horizontal li a {
+        padding: 6px 10px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="logo-area">
+        <img src="icons/icon_luismario.jpg" alt="Icono" class="icono" />
+        <h1 class="titulo">Luis Mario</h1>
+      </div>
+      <div class="redes">
+        <a href="https://www.facebook.com/share/1HbWZq1WtK/?mibextid=wwXIfr" target="_blank">
+          <img src="icons/rs_facebook.png" alt="Facebook" class="red-icon" />
+        </a>
+        <a href="https://instagram.com/luismarioartist/?igsh=MWpsdTFrajExOHgzeQ%3D%3D" target="_blank">
+          <img src="icons/rs_instagram.png" alt="Instagram" class="red-icon" />
+        </a>
+                 <a href="https://x.com/luismarioo18?s=21" target="_blank">
+          <img src="icons/rs_twitter.png" alt="Twitter" class="red-icon" />
+        </a>
+      </div>
+    </div>
+
+    <nav class="menu-horizontal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="biografia.html">Biografía</a></li>
+        <li><a href="musica.html">Música</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 style="margin-bottom: 20px; text-align:center; color:#1e1e2f;">Galería de imágenes: Luis Mario</h2>
+    <section class="galeria">
+      <img src="images/image_1.jpg" alt="Imagen 1" />
+      <img src="images/image_2.jpg" alt="Imagen 2" />
+      <img src="images/image_3.jpg" alt="Imagen 3" />
+      <img src="images/image_4.jpg" alt="Imagen 4" />
+      <img src="images/image_5.jpg" alt="Imagen 5" />
+      <img src="images/image_6.jpg" alt="Imagen 6" />
+      <!-- Añade más imágenes aquí -->
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biografía - Luis Mario</title>
+  <link rel="icon" href="icons/icon_luismario.jpg">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding-bottom: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .icono {
+      width: 40px;
+      height: 40px;
+    }
+
+    .titulo {
+      font-size: 1.8em;
+    }
+
+    .redes {
+      display: flex;
+      gap: 10px;
+    }
+
+    .red-icon {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.2s;
+    }
+
+    .red-icon:hover {
+      transform: scale(1.1);
+    }
+
+    .menu-horizontal {
+      overflow-x: auto;
+      background-color: #2e2e40;
+    }
+
+    .menu-horizontal ul {
+      display: flex;
+      list-style: none;
+      padding: 10px 20px;
+      gap: 20px;
+    }
+
+    .menu-horizontal li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+      white-space: nowrap;
+    }
+
+    .menu-horizontal li a:hover {
+      background-color: #444465;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    main h2 {
+      margin-bottom: 15px;
+      font-size: 2em;
+      color: #1e1e2f;
+    }
+
+    main p {
+      margin-bottom: 15px;
+      font-size: 1.1em;
+      text-align: justify;
+    }
+
+    @media (max-width: 600px) {
+      .header-top {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .titulo {
+        font-size: 1.4em;
+      }
+
+      .menu-horizontal ul {
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .menu-horizontal li a {
+        padding: 6px 10px;
+        font-size: 14px;
+      }
+
+      main {
+        margin: 20px 15px;
+        padding: 15px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="logo-area">
+        <img src="icons/icon_luismario.jpg" alt="Icono" class="icono" />
+        <h1 class="titulo">Luis Mario</h1>
+      </div>
+      <div class="redes">
+        <a href="https://www.facebook.com/share/1HbWZq1WtK/?mibextid=wwXIfr" target="_blank">
+          <img src="icons/rs_facebook.png" alt="Facebook" class="red-icon" />
+        </a>
+        <a href="https://instagram.com/luismarioartist/?igsh=MWpsdTFrajExOHgzeQ%3D%3D" target="_blank">
+          <img src="icons/rs_instagram.png" alt="Instagram" class="red-icon" />
+        </a>
+                 <a href="https://x.com/luismarioo18?s=21" target="_blank">
+          <img src="icons/rs_twitter.png" alt="Twitter" class="red-icon" />
+        </a>
+      </div>
+    </div>
+
+    <nav class="menu-horizontal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="musica.html">Música</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Biografía de Luis Mario</h2>
+    <p>
+      Luis Mario es un joven talento multifacético, reconocido como productor, escritor y 
+      cantante. Con una pasión innata por la creatividad y la expresión artística, ha logrado 
+      combinar sus diversas habilidades para dar vida a proyectos auténticos que conectan con 
+      distintas audiencias. Su versatilidad y compromiso lo han posicionado como una promesa 
+      emergente dentro del ámbito cultural y musical.
+
+Actualmente, se encuentra trabajando en la tercera temporada de Aventuras con el Luis, 
+una serie que ha evolucionado junto a su trayectoria creativa y que destaca por su estilo
+ cercano y original. Además, hace unos días presentó Aprendiendo a Golpes, su más reciente
+  álbum musical, donde explora nuevas facetas sonoras y líricas, consolidando así su 
+  crecimiento como artista integral.
+    </p>
+
+  </main>
+</body>
+</html>
